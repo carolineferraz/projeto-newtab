@@ -1,0 +1,31 @@
+.list{
+    width: 100%;
+    padding: 1%;
+}
+
+th, td{
+    padding: 0.4%;
+}
+
+th{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: medium;
+    line-height: 100%;
+    vertical-align: top;
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+
+td{
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+  }
+
+table{
+    padding: 2%;
+}
+

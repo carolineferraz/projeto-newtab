@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alunos</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>NewTab Academy - Cadastro</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
 </head>
 <body>
     <header>
-        <img src="./assets/imgs/newtab-logo.png" width="12%"/> 
+        <img src="../assets/imgs/newtab-logo.png" width="12%"/> 
     </header>    
     <div class="menu">
         <a href="../index.html">
-            Listagem
+            LISTAGEM
         </a>
-        <br/>
-        <a href="./form.html">
-            Cadastro
+        <a href="../form.html">
+            CADASTRO
         </a>
 
         
     </div>
-    Formulário
     <section>
+        <form>
+            <div>
+                <label class="large-label" for="name">Nome:</label>
+                <input name="name" id="name" required type="text" placeholder="Digite seu nome completo"/>
+            </div>
 
+            <div>
+                <label class="large-label" for="name">Telefone:</label>
+                <input name="phone" id="phone" required type="text" placeholder="Ex.: +55 81 99999-9999"/>
+            </div>
+
+            <div style="display: flex;">
+                <label class="large-label">Experiência prévia:</label>
+                <div style="display: inline-block; width: 40%;">
+                    <input type="radio" name="xp" id="xp-yes"/>
+                    <label for="xp-yes">Sim</label>
+                    <br/>
+                    <input type="radio" name="xp" id="xp-no"/>
+                    <label for="xp-no">Não</label>
+                </div>
+                <br/>
+                <input type="submit" value="Salvar">
+            </div>
+        </form>
     </section>
 </body>
 </html>
